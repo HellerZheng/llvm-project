@@ -393,6 +393,9 @@ RISC-V Support
 - Fixed incorrect ABI lowering of ``_Float16`` in the case of structs
   containing ``_Float16`` that are eligible for passing via GPR+FPR or
   FPR+FPR.
+- Added ``attribute(riscv_rvv_vector_bits(__RISCV_RVV_VLEN_BITS))`` to allow
+  the size of a RVV (RISC-V Vector) scalable type to be specified. This allows
+  RVV scalable vector types to be used in structs or in global variables.
 
 CUDA/HIP Language Changes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
